@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+    .card{
+      border: 1px solid black;
+      background-color: #EEE;
+      border-radius: 10px;
+      /*display:inline-block;*/
+      margin: 10px 50px;
+      padding: 10px;
+    }
+    .card img {
+      border-radius: 10px 10px 0 0;
+    }
+  </style>
+ </head>
+ <body>
+   <h1>Mzo onlyne Store</h1>
+
+   <div class="container">
+     <div class="card">
+        <img src="https://m.media-amazon.com/images/I/819GfPP8LHL._AC_UL320_.jpg">
+        <p>JBL Live 770NC Noise Cancelling Wireless Over-Ear Headphones, Black</p>
+        ⭐⭐⭐⭐(30K+)
+        <p>R1 498,00</p>
+       <button>Add to cart</button>
+       <button>Buy Now</button>
+     </div>
+
+     <div class="card">
+       <img src="https://m.media-amazon.com/images/I/61vBghtTdmL._AC_UL320_.jpg">
+       <p>Apple AirPods Pro 3 Wireless Earbuds, Active Noise Cancellation, Heart Rate Sensing, Bluetooth Headphones, Spatial Audio, High‑Fidelity Sound,</p>
+       ⭐⭐⭐⭐(30K+)
+       <p>R5 489,00</p>
+       <button>Add to cart</button>
+       <button>Buy Now</button>
+     </div>
+
+     <div class="card">
+       <img src="https://m.media-amazon.com/images/I/51B0BUm83zL._AC_UL320_.jpg">
+       <p>JBL Endurance Race 2 True Wireless Active Sport In-Ear Earbuds, Black</p>
+       ⭐⭐⭐⭐(30.4K+)
+       <p>R1 399,00</p>
+       <button>Add to cart</button>
+       <button>Buy Now</button>
+     </div>
+   </div>
+ </body>
+ </html>
+
+ <!-- 
+   # Flexbox ***
+     - Organize elements in one horizontal direction
+     - Properties
+      -container
+       - display: flex** (Element flexible in nature)
+       - flex-direction ***: Set the direction of flex container's elements
+          - row (default)
+       - justify-content: Align the child elements within the flex container   
+         - start: (default)
+         - end: pushes elements to the end/ right side of the page
+         - center: center of the container
+         - space-around: equal space on both sides (space in between will be 2* space)
+         - space-evenly: equal space on both the sides (space in between will be merged)
+         - space-between: space in between 2 elements will be equal, no space on the sides
+         - align-items**: Align the child elements within the flex container through cross axis
+            - start: (default)
+            - end: pushes elements to the end/ bottom side of the page
+            - center: center of the container
+            - flex-wrap**: wrap the child elements if they exceed the parent container's width
+            - no wrap: (default): No wrapping
+            - wrap: wrap child elements to the next row 
+        - Items 
+          - order: Set the order of the individual items
+      # Main and Cross Axis
+        - flex-direction: row
+          - Main axis: X Axis /horizontal axis
+          - Cross axis: Y axis
+        - flex-direction: column
+          - Main axis: Y Axis /vertical axis
+          - Cross axis: X axis
+        
+-->  

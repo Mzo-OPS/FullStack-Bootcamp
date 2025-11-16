@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Box Model</title>
+  <style>
+     /*img {
+      width: 300px;
+      height: 300px;
+      border: 5px solid black;
+       padding: 10px;
+      margin: 10px;
+      box-sizing: border-box; */
+    }
+ 
+    #parent {
+      border: 2px solid black;
+      width: 300px;
+      height: 600px;
+      box-sizing: border-box;
+    }
+
+    .child {
+      width: 300px;
+      height: 300px;
+      border: 2px solid black;
+      padding: 10px;
+      box-sizing: border-box;
+    } 
+
+  </style>                                                                                                                                                                                  
+</head>
+<body>
+  <h1>Box Model</h1>
+  <!--/*<img src="https://media.istockphoto.com/id/2218333130/photo/confident-businessman-smiling-in-a-casual-suit-and-glasses-indoors.webp?a=1&b=1&s=612x612&w=0&k=20&c=H6ImSogE21cldteIwpMDo2LgYK6Szk7mJC4M1aL8PWU="> -->
+  
+  <div id="parent">
+    <div class="child">CHILD</div>
+    <div class="child">CHILD</div>
+  </div>
+</body> 
+</html>
+
+
+<!--
+  # Box Model:  ***
+    - To better determine the overall dimensions of an element
+    - 4 different components
+      - Content (Blue): Actual dimension of the element
+      - Padding (Green): Space inside the border
+      - Border (Yellow): Border width
+      - Margin (Brown): Space outside the border
+
+    - 'box-sizing': Control the dimension of an element
+      - content-box (default): 
+        - Width and Height only applies to the content part
+      - border-box:
+        - width and height applies to [content + padding + border]
+
+        resume at 1:15:25
+-->

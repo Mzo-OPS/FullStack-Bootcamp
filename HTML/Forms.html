@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+  <title>Forms</title>
+</head>
+<body>
+  <form>
+    <h1>Vehicle Renewal Form</h1>
+       <h2>Personal Details</h2>
+        Name: <input type="text"  name="name" placeholder="Name" required value="Mzo"><br><br>
+        Email: <input type="email"  name="email" placeholder="Email" required><br><br>
+        Age: <input type="number" name="age"  placeholder="Age" required><br><br>
+        Password: <input type="password" name="password"  placeholder="Password" required><br><br>
+        Date of graduation: <input type="datetime-local" name="datetime-local"><br><br>
+        Resume: <input type="file" name="resume"><br><br>
+        
+        Gender:
+        <select> 
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+          </select>
+        <br><br>
+
+        Gender: 
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Other
+        <br><br>
+
+        Hobbies: 
+        <input type="checkbox"name="hobbie">Soccer
+        <input type="checkbox" name="hobbie">Swimming
+        <input type="checkbox" name="hobbie">Wrestling
+        <br><br>
+    
+        Favorite color: <input type="color" name="favorite-color"><br><br>
+        Describe your experience<br>
+         <textarea rows="10" cols="50" maxlength="250"></textarea>
+        <button>Submit</button>
+
+        <h2>Vehicle Details</h2>
+        Vehicle Type: 
+        <input type="checkbox"name="vehicle">Brand
+        <input type="checkbox"name="vehicle">Model
+        <input type="checkbox"name="vehicle">Year
+  </form>
+   
+</body>
+</html>
+
+<!--
+  in oreder to type samething in different lines use (ALT and start clicking on the lines you want.)
+  # Forms:
+    - Used to collect data from the user.
+    - Tags:
+      - <form>: Container for form elements.
+      - <input>: input field for user data
+         - 'type' attribute
+           - text: Simple text input
+           - Number: Numeric input
+           - email: Email input
+           - password: Password input
+           - date: Date input
+           - datetime-local: Date and time input
+           - file: File upload
+           - radio: Single selection
+             - checked: Radio box will be selected by default
+           - checkbox: Multiple selection
+             - checked: Radio box will be selected by default
+          - 'name' attribute: Provides name to the input field
+          - 'value' attribute: Default value for the input field
+              E.g. Default Value:(Name: <input type="text"  name="name" placeholder="Name" required>)
+          - 'placeholder' attribute: provides a hint.
+          - 'required' attribute: makes the field mandatory.
+          - 'disabled' attribute: Disable an input field
+       - button: Clickable Buttons
+              eg <input type="button" value="Submit">
+           - 'type' attribute
+              - submit: Used to submit a form
+              - reset: Used to reset the form
+              - button: Random button in the form
+       - select: Dropdown (Single selection)
+         - option tag: Individual options
+         - e.g. Gender:
+                  <select> 
+                    <option value='M'>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                  </select>
+       - textarea: Lengthy text inputs
+         - 'rows' attribute: Number of rows
+         - 'cols' attribute: NUmber of columns
+           
+  # Additional notes:
+      -input type="hidden": Dont want to show the field,but want to process the values with other details of the form
+
+      \\- <textarea>: Multi-line text input.
+      \\- <select> and <option>: Dropdown menus.
+      \\- <label>: Labels for form elements.
+      \\- <button>: Clickable button. begin @ 2:46:58
+--> 
