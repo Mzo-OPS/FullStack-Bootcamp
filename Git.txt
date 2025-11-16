@@ -11,11 +11,13 @@
     - remote repository: Project folder on Github
   - stage: Prepare files to be committed
   - commit: Save changes
+  - push: Upload
+  - pull: Download
     
 # Local Workflow
     - 3 areas:
-      - Working directory: Make changes (Red)
-      - Staging area: A subset of all changes ready to be 'committed' are moved here (Green)
+      - Working directory: Make changes (Red in terminal)
+      - Staging area: A subset of all changes ready to be 'committed' are moved here (Green in terminal)
       - Local repository (.git): committed  changes are saved here
 # Steps to upload a project (local repository) on Github
   - Github:
@@ -31,9 +33,17 @@
     - git add: Stage files 
       - git add file1.html: Stage file1.html
       - git add .: Stage all files
-    - git commit -m "Message": Commit chnages 
+    - git commit -m "Message": Commit changes
+    - git remote add origin [remote repository link]: link local repository to remote repository 
+    - git push -u origin master: Upload the code to the remote repository linked in 'master' branch
+  - Second time and onwards
+    - git add: Stage files
+      - git add file1.html: Stage file1.html
+      - git add .: Stage all files
+    - git commit -m "Message": Commit changes
+    - git push: Push commited changes to 'master' branch in the remote repository
 
-  - Generic
+  - Generic 
     - git status: Current status of local repository  
 - Working with Remotes
 
@@ -44,4 +54,4 @@
 - Refences:
 https://uidaholib.github.io/get-git/images/workflow.png
 
-resume @ 2:31:48
+resume @ 2:51:56
