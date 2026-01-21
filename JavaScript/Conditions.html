@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions</title>
+</head>
+<body>
+  <script>
+    /*
+      # Conditions:
+        - Create logic based on boolean values (true/false)
+        - if else condition ***
+          - Syntax:
+            // if(condition) {
+              // Code for the true condition
+           // } else {
+              // Code for the false condition
+           // }
+          //- else if: Add follow up conditions
+            - Syntax:
+              // if(condition1){
+                //    Code to execute if condition1 is true
+               // } else if(condition2) {
+               //    Code to execute if condition1 is false and condition2 is true
+              //  } else {
+              //     condition1 and condition2 are false
+              //  }
+        - switch case condition: Check one value against multiple values
+          - Syntax:
+            switch(variable) {
+              case 'value1':
+                // Code to be executed when condition == value1
+                break
+                case 'value2':
+                // Code to be executed when condition == value2
+                break
+                case 'value3':
+                // Code to be executed when condition == value3
+                break
+                ...
+              default:
+                // Default case
+          }
+      - Ternary Operator (?:)*
+        - 'Syntactic sugar'for if else blocks
+        - Syntax: condition ? valueIfTrue : valueIfFalse
+  */
+    
+  var x = 10
+  var y = 20
+  var z = 30
+    
+    // var x = 10, y = 20, z = 30;
+
+    // if(y > x) {
+    //   console.log('YES')
+    // } else {
+    //   console.log('NO')
+    // }
+
+    // if(y > z) {
+    //   console.log('YES')
+    // } else {
+    //   console.log('NO')
+    // }
+
+    // if(x > y) {
+    //  console.log('Test1')
+    // } else if (x > z) {
+    //   console.log('Test2')
+    // } else {
+    //   console.log('Test3')
+    // }
+
+    /*----------------------------------------------*/
+    // Example 1: Check if the number is greater than 100
+    // var number = 200
+    // var number = Number(prompt('Enter any number:')) // Number convert string to number
+    // console.log(number)
+    //  if(number > 100) {
+    // console.log('number is greater than 100')
+    // } else {
+    // console.log('number is not greater than 100')
+    // }
+    /*----------------------------------------------*/
+
+    // Example 2: Check if two numbers are equal or not
+    // var num1 = Number(prompt('Enter first number:'))
+    // var num2 = Number(prompt('Enter second number:'))
+    //  if(num1 == num2) {
+    //    console.log('Both numbers are equal')
+    //  } else {
+    //  console.log('Both numbers are not equal')
+   // }
+
+    /*----------------------------------------------*/
+    // Example 3: Compare two numbers and conclude which one is greater
+    // var num1 = Number(prompt('Enter first number'))
+    // var num2 = Number(prompt('Enter second number'))
+
+    // Condition logic
+    // if(num1 > num2) {
+    //  console.log('num1 is greater than num2')
+    // } else if(num2 > num1) {
+    //   console.log('num2 is greater than num1')
+    // } else {
+    //  console.log('Both numbers are equal')
+    // }
+
+    /*----------------------------------------------*/
+   // Example 4: Find the color of the fruit
+   
+   // Solution 1: if else condition 
+   // var fruit = prompt('Enter fruit name')
+   // if(fruit == 'Apple') {
+   //   console.log('RED')
+   // } else if (fruit == 'Orange') {
+   //   console.log('ORANGE')
+   // } else if (fruit == 'Banana') {
+   //   console.log('YELLOW')
+   // } else {
+   //   console.log('NA')
+   // }
+
+   // Solution 2: switch case 
+   // var fruit = prompt('Enter fruit name')
+   // switch(fruit) {
+   //  case 'Apple':
+   //    console.log('RED')
+   //    break
+   //  case 'Orange':
+   //    console.log('ORANGE')
+   //    break
+   //  case 'Banana':
+   //    console.log('YELLOW')
+   //    break
+   //  default:
+   //    console.log('NA')
+   // }
+
+   /*-------------------------------*/
+   // var x = true
+   // console.log(x ?'JavaScript' : 'HTML')
+
+   // var num1 = 20
+   // var num2 = 20
+   var num1 = Number(prompt('Eneter first number'))
+   var num2 = Number(prompt('Eneter second number'))
+   console.log(num1 == num2 ? 'Equal' : 'Unequal')
+  </script>
+    <h1>Hello, World!</h1>
+</body>
+</html>
+
+resume 2:42
