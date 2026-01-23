@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var, Let, and Const</title>
+</head>
+<body>
+    <h1>Var, Let, and Const</h1>
+    <script>
+      /*
+       * Scopes
+          - Global Scope: Space where a variable can be accessed from anywhere in the code.
+          - Function Scope
+          - Block Scope ({}): variables can be accessed within the block they are defined.
+
+       # Declare variables
+         - var, let, const
+         - ES6: ECMAScript 6 (2015)
+           - let and const were introduced in ES6
+        
+           - var: variables
+             - variables can be re-declared
+             - can be re-assigned
+             - Function scope
+             - let: Variables
+               - can not be re-declared
+               - can be re-assigned
+               - Block scope
+              - const: Constants
+                - Block scope
+                - Cannot be re-declared
+                - can be re-assigned
+      */
+
+      // var x = 10; // Global scope
+      
+      // if(10 > 5) {
+      //  console.log(x); // 10 // block scope
+      // }
+
+      //  console.log(x); // 10 // global scope
+
+      /*--------------------------------------*/
+      // Example 1:
+      // let studentName = 'John Doe'
+      // if(100 > 50) {
+      //  let studentName1 = 'Mzomuhle'
+      //  let studentName2 = 'Sipho'
+      //   console.log(studentName1, studentName2) // Mzomuhle Sipho
+      // }
+      // console.log(studentName) // John Doe
+
+      // var x = 10
+      // var x = 100
+      // console.log(x) // 100
+
+      // let x = 10
+      // console.log(x) // 10
+
+      // const x = 10
+      // x = 20
+
+    /*--------------------------------------*/
+      // Example 2:
+      // var name = 'Mark'
+      // if(true) {
+      //   var name = 'Sarah'
+      // }
+      //  console.log(name + name) // SarahSarah
+      
+      /*--------------------------------------*/
+      // Example 2:
+      // let name = 'Mark'
+      // if(true) {
+      //   let name = 'Sarah'
+      // }
+      // console.log(name + name) // MarkMark
+    /*--------------------------------------*/
+    // Example 3:
+
+    // let person = 'Mark'
+    // if(true) {
+    //   let person = 'Sarah'
+    //  console.log(person + person) // SarahSarah
+    // }
+    //  console.log(person + person) // MarkMark
+
+    /*--------------------------------------*/
+    // Example 4:
+    
+   // const person = 'Mark'
+   // if(true) {
+   //   const person = 'Sarah'
+   //   console.log(person + person) // SarahSarah
+   // }
+   //   console.log(person + person) // MarkMark
+
+    /*--------------------------------------*/
+    // Example 5: Find the factorial of the given number
+    let num1 = Number(prompt("Enter a number to find its factorial: ")) // 5
+    let factorial = 1  //1
+    for(let i = num1; i >=1; i--) {
+      factorial = factorial * i
+    }
+    console.log(factorial) // 120
+    
+
+    </script>
+</body>
+</html>
+
+<!-- 
+ # Future Scope Topics
+   - Hoisting
+   - Temporal Dead Zone (TDZ)
+   - Best Practices
+-->
+
+
+Resume 2:11:4
