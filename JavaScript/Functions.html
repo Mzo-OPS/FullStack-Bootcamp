@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+  <script>
+    /*
+      # Functions:
+        - A set/block of code which is intended to perform a particular task.
+        - Functions can be executed as many number of times as needed.
+        - advantages of functions:
+          - Avoid repetition of code (redundancy)
+            - DRY (Don't Repeat Yourself) principle.
+          - Makes code more organized and modular.
+          
+        - For any function to be executed in JS, it needs two setups:
+          - Declaration/definition
+          - Invocation/calling
+
+        - Type of function:
+          - Standard function 
+          - Anonymous function 
+            - Does not have a name
+            - Used as a function expression
+          - Arrow function
+
+        - Syntax:
+          - Declaration
+            function functionName(parameters) {
+              // code to be executed
+            }
+            ANONYMOUS FUNCTION
+            const functionName = function(parameters) {
+              // code to be executed
+            }
+          - Invocation
+            functionName(arguments)
+
+        - Parameters and arguments:
+          - Can make a function dynamic (for different inputs, you get different outputs)
+          - Parameters: function variables (Values expected by the function)
+          - Arguments: actual values passed to the function when invoking it.
+          - Syntax:
+            - Declaration:
+              function fun1(a, b) { // a and b are parameters
+              // code
+              }
+              Invokation:
+              fun1(10, 20) // 10 and 20 are arguments
+        -  'return' keyword:
+           - Return a value at the place where the function was invoked
+           - Terminates the function execution at the point where return keyword was used.
+    */ 
+
+     /* -----------------------------------*/
+
+    // function greet() {
+    //   console.log('Hello, welcome to JavaScript functions!')
+    //   let num1 = 10
+    //   let num2 = 20
+    //   let sum = num1 + num2
+    //   console.log('Sum =', sum)
+    //   console.log('Thank you for learning functions with us!')
+    // }
+    // greet() // Output: Hello, welcome to JavaScript functions!
+    // greet()
+    // greet()
+
+   // function abc() {
+   //   console.log('ABC')
+   // }
+   // abc() // Output: ABC
+
+   /* -----------------------------------*/
+
+   // const abc = function () {
+   // console.log('ABC')
+   // }
+   // abc  () // Output: ABC
+  //  abc  () // Output: ABC
+  //  abc  () // Output: ABC
+ //   abc  () // Output: ABC
+
+  /* -----------------------------------*/
+  /* # Example 1: Create a function to list the recipe steps for making a pizza. 
+     1. prepare the pizza base
+     2. add pizza sauce
+     3. add toppings
+     4. add cheese
+     5. bake the pizza
+    */
+
+    // function pizzaRecipe() {
+    //  console.log('1. prepare the pizza base')
+    //  console.log('2. add pizza sauce')
+    //  console.log('3. add toppings')
+    //  console.log('4. add cheese')
+    //  console.log('5. bake the pizza')
+   //  }
+  // pizzaRecipe()
+  // pizzaRecipe()
+  // pizzaRecipe()
+
+  /* -----------------------------------*/
+  
+  // function sum() {
+  //  let num1 = 10
+  //  let num2 = 20
+  //  console.log(num1 + num2)
+  //}
+  // sum() // Output: 30
+  // sum() // Output: 30
+  // sum() // Output: 30
+  
+  /*
+  
+    # Example 2: Create a function to find a sum of two numbers */
+   /* -----------------------------------*/
+  //   function sum(num1, num2) { // Parameters
+  //    console.log(num1 + num2)
+  //   }
+  //   sum(10, 20) // Arguments Output: 30
+  //     sum(5, 15) // Arguments Output: 20
+
+   /* -----------------------------------*/
+   /*  # Example 3: create a function to display the full name of the user if firstName and lastName are provided  */
+    
+   // function printFullName(firstName, secondName) {
+   //   if (firstName == '') { // additional edges if they dont keyin the name and so forth the sms return below
+   //       console.log('You have provided an incorrect first name')
+   //      }
+   //      console.log(firstName + ' ' + lastName)
+   //    }
+   //  printFullName('kelly', 'Cook')
+   //  printFullName('Mzomuhle', 'Nyandeni')
+   //  printFullName('', 'Singh')
+
+   /*  --------------------------------- */
+   //   Way1
+   /* # Example 4: Create a function which takes a number as parameter and logs whether it is an even number or odd number */
+   //    function evenOrOdd(num) {
+   //       if(num%2 == 0) {
+  //          console.log('Provided number is even')
+  //         } else {
+  //           console.log('Provided number is odd')
+  //         }
+ //      }
+//        evenOrOdd(19)
+//        evenOrOdd(10)
+
+
+      /* Alternative */
+    // Way 2    
+
+    //  function evenOrOdd(num) {
+    //    if(num % 2) {
+    //      console.log('Provided number is odd')
+    //    } else {
+    //      console.log('Provided number is even')
+    //    }
+    //  }
+
+    //  evenOrOdd(20)
+    //  evenOrOdd(21)
+
+    //  Way 3
+
+    //  function evenOrOdd(num) {
+    //    let num = Number(num)
+    //    if(isNaN(num)) {
+    //      console.log('Invalid input')
+    //      return
+    //    }
+    //    console.log(num % 2 ? 'Odd' : 'Even')
+    //  }
+    //  evenOrOdd(13)
+    //  evenOrOdd(10)
+    //  evenOrOdd('Hello')
+      /*--------------------------------*/
+
+    /* the use of return keyword */
+    // function abc() {
+    //  console.log('START')
+    //  console.log('FUNCTIONS')
+    //  return
+    //  console.log('END')
+    // }
+    // abc()
+
+    //function add(num1, num2){
+    //  const sum = num1 + num2
+    //  return sum
+    // }
+    // console.log(add(30, 50)) // first method add=80
+    // const result = add(30, 50) // second method result=80
+    // console.log(result)
+
+    /* -------------------------------- */
+    /* # Example 5: Create a function which takes a number as parameter and checks whether it is an prime number or not a prime number */
+    
+    // function checkPrime(num1) {  // num1= 5
+    //   for(let i = 2; i < num1; i++) { // i= 2
+    //     if(num1 % i == 0) {  // 5 devide by 2 --->(5%2) 
+    //       console.log('Provided number is not a prime number')
+    //       return // immediately it gets proof its cuts off or stops
+    //     }
+    //   }
+    //   console.log('Provided number is a prime number')
+    // } 
+    // checkPrime(5)
+
+    /* -------------------------------- */
+    /* # Example 6: Create a function which takes a number as parameter and returns the factoral of the number */
+    //   WAY 1
+    //   function factorial(num) {
+    //     let fact = 1        
+    //     for(let i = num; i >= 2; i--) { // 1
+    //      fact = fact * i // 1*5=5, 5*4=20, 20*3=60, 60*2=120
+    //     }
+    //      return fact
+    //   }
+    //   console.log(factorial(5))
+    //   console.log(factorial(6))
+
+    // WAY 2
+    //   function factorial(num) {
+    //     let fact = 1        
+    //     for(let i = 2; i <= num; i++) { // 1
+    //      fact = fact * i // 1*5=5, 5*4=20, 20*3=60, 60*2=120
+    //     }
+    //      return fact
+    //   }
+    //   console.log(factorial(5))
+    //   console.log(factorial(6))  
+    
+    /* -------------------------------- */
+    /* # Example 7: Create a function which takes a 2 numbers as parameters and returns the average of the 2 numbers */
+    //  WAY 1
+    // function average(num1, num2) { // num1=10, num2=20
+    //   return (num1 + num2) / 2  // (10 + 20) / 2
+    //   }
+    //   console.log(average(10, 20))  // Output: 15
+
+    // WAY 2
+    //   function getAvg(num1, num2) { // num1=10, num2=20
+    //    let avg = (num1 + num2) / 2   // (10 + 20) / 2
+    //    return avg  // return the value of avg to the place where the function was invoked
+    //   }
+    //   console.log(getAvg(10, 20)) // Output: 15
+
+    /* -------------------------------- */
+    /* # Example 8: Create a function which takes a 3 numbers as parameters and returns the largest number (Assume that all 3 numbers are unequal)*/
+    // WAY 1
+       function findMax(num1, num2, num3) {
+          if(num1 > num2 && num1 > num3) { // num1=25, num2=75, num3=50
+            return num1
+          } else if(num2 > num1 && num2 > num3) { // num1=25, num2=75, num3=50
+            return num2
+          } else {
+            return num3
+          }
+       }
+       let result = findMax(25, 75, 50) // result = 75
+       console.log(result + ' is the largest number') // Output: 75
+
+    // WAY 2
+    // function findMax(num1, num2, num3) {
+    //   return Math.max(num1, num2, num3)
+    // }
+    // let result = findMax(25, 50, 75) // result = 75
+    // console.log(result + ' is the largest number') // Output: 75
+  </script>
+</body>
+</html>
