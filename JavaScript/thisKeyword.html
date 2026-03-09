@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding the 'this' Keyword in JavaScript</title>
+</head>
+<body>
+    <!-- Your content goes here -->
+    <script>
+      /* 
+         # this keyword: Refers to its immediate parent object.
+           - Within a method of an object: Refers to the parent object
+           - In global scope: Refers to the window object.
+             - Window object is the Browser Object Model (BOM)
+               - Complete information about the webpage and the browser details
+               - Reserved: window
+      */
+
+      //  const simonDetails = {
+      //    name: 'Simon',
+      //     age: 28,
+      //     favoriteColor: null,
+      //     hobbies: ['Swimming', 'Dance', 'Cyclist'],
+      //     displayIntroduction: function() {
+      //       console.log("Hi, I'm " + this.name + ". I am " + this.age + " years old and my hobbies are " + this.hobbies.join(", ") + ".")
+      //     }
+      //   }
+       
+      //  simonDetails.displayIntroduction() // this will refer to simonDetails object
+
+      console.log(this) // this will refer to the window object
+    </script>
+</body>
+</html>

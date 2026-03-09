@@ -122,6 +122,27 @@
       }
 
       /* "for in" is for keys and "for" is for actually values */
+      /*------------------------------------------*/  
+      /*
+        # Constructor: Create objects of similar type
+          - Inbuilt constructors: (Used by JS behind the scenes) 
+            - Number() : Create a number object
+            - String() : Create a string object
+            - Boolean() : Create a boolean object
+      */
+
+      // const num1 = 5
+      // const num2 = new Number(5)
+      // console.log(typeof num1, typeof num2)
+
+      // const str1 = 'Hello'
+      // const str2 = new String('Hello')
+      // console.log(typeof str1, typeof str2)
+      // console.log(str2.valueOf()) // valueOf: Primitive value
+
+      // const str1 = 'Yaritza'
+      // console.log(str1.toUpperCase()) // JS under the hood, wraps this string value as a String object so that properties and methodscan be used
+      // console.log(typeof str1)
   </script>
 </body>
 </html> 
