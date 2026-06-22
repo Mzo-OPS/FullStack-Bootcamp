@@ -1,0 +1,8 @@
+@everyone 
+Additional resources:
+https://www.w3schools.com/js/js_conditionals.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+https://quickref.me/javascript.html
+
+https://www.javascripttutorial.net/javascript-primitive-wrapper-types/
+https://www.programmerinterview.com/javascript/wrapper-objects-in-javascript/
